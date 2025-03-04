@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/alexa/OneDrive/Desktop/RLC/tema1-public/switch.py", line 164, in <module>
+    if _name_ == "_main_":
+NameError: name '_name_' is not defined. Did you mean: '__name__'?

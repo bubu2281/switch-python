@@ -1,0 +1,14 @@
+1 2 3
+Stefan Alexandru 334CB
+
+Task 1: Am declarat o tabela cam goala, pe care o completez in functie de pachetele care vin, daca nu am in tabela
+    mac-ul destinatiei de care am nev trimit pe toate interfetele, daca il am trimit doar pe interfata resopectiva.
+    De asemena, daca in tabela nu am mac-ul sursa al pachetului il introduc, iar la interfata pun interfata pe care a venit pachetului
+
+Task 2: In prima faza citesc din fisier toate vlan id-urile ale interefetelor switch ului si le retin intr un vlan_table
+    Ulterior, am abordat cele 4 cazuri posibile de trimitre de pachete A->A, A->T, T->T, T->A (A - access, T - trunk), iar pentru
+    fiecare caz daca era cazul am adaugat sau am eliminat header-ul 802.1q, si am trimis pachetele corect avand in vedere vlan id-ul lor
+
+Task 3: In loc sa fac o structura separata am declarat global own_bridge_id, root_bridge_id, root_path_cost si root_port
+    urmand sa ma folosesc de ele pentru a transpune pseudocodul din cerinta temei in python. De asemenea m-am asigurat
+    ca atunci cand primesc un pachet de tipul bdpu sa nu il mai tratez ca pe un pachet normal.
